@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://aitoolsradar.com/sitemap.xml

@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[43871,["/aitoolsradar/_next/static/chunks/14-0y3hk.y_8i.js","/aitoolsradar/_next/static/chunks/13qspctucq8hx.js","/aitoolsradar/_next/static/chunks/0qihue3daat9o.js"],""]
+3:I[46608,["/aitoolsradar/_next/static/chunks/14-0y3hk.y_8i.js","/aitoolsradar/_next/static/chunks/13qspctucq8hx.js","/aitoolsradar/_next/static/chunks/0qihue3daat9o.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex min-h-[60vh] flex-col items-center justify-center px-4 text-center","children":[["$","h1",null,{"className":"mb-4 text-6xl font-extrabold text-cyan-accent","children":"404"}],["$","h2",null,{"className":"mb-2 text-2xl font-bold text-text-primary","children":"Page not found"}],["$","p",null,{"className":"mb-8 text-text-secondary","children":"The page you're looking for doesn't exist or has been moved."}],["$","$L2",null,{"href":"/","className":"rounded-lg bg-cyan-accent px-6 py-3 font-semibold text-black transition-transform hover:scale-105","children":"Back to Home"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"08RcUYDrMoX_U3qzcjcZl"}
+5:null
