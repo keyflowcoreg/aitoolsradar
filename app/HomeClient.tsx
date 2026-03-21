@@ -6,6 +6,9 @@ import HeroCarousel from "@/components/HeroCarousel";
 import CategoryCard from "@/components/CategoryCard";
 import StarRating from "@/components/StarRating";
 import NewsletterForm from "@/components/NewsletterForm";
+import EmailCapture from "@/components/EmailCapture";
+import { FAQAccordion } from "@/components/FAQAccordion";
+import { EcosystemFooter } from "@/components/EcosystemFooter";
 import { categories, getTopPicks } from "@/lib/tools";
 
 const topPicks = getTopPicks();
@@ -194,26 +197,51 @@ export default function HomeClient() {
         <NewsletterForm />
       </section>
 
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        suppressHydrationWarning
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "AIToolsRadar",
-            url: "https://aitoolsradar.com",
-            description:
-              "Compare 40+ AI tools across code, writing, design, marketing, data, and automation.",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: "https://aitoolsradar.com/search?q={search_term_string}",
-              "query-input": "required name=search_term_string",
+      {/* Email Capture */}
+      <section className="mx-auto max-w-xl px-4 py-16 sm:px-6">
+        <EmailCapture
+          heading="Get weekly AI tool insights"
+          description="New tools, updated reviews, and category deep-dives delivered every week."
+          buttonText="Subscribe Free"
+          accent="emerald"
+        />
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+        <FAQAccordion
+          heading="Frequently Asked Questions"
+          items={[
+            {
+              question: "Is AIToolsRadar really free?",
+              answer: "Yes, completely free. No account required, no hidden paywalls. We make money through affiliate links when you visit a tool through our site. This does not affect our ratings or recommendations.",
             },
-          }),
-        }}
-      />
+            {
+              question: "How do you rate AI tools?",
+              answer: "We evaluate tools based on features, ease of use, pricing, documentation quality, and real-world performance. Every review is based on actual usage, not marketing claims.",
+            },
+            {
+              question: "How often are reviews updated?",
+              answer: "We review and update tool listings regularly as pricing, features, and capabilities change. Major updates are reflected within a week.",
+            },
+            {
+              question: "Can I suggest a tool to add?",
+              answer: "Absolutely! Use our contact form or email us at hello@aitoolsradar.com. We review every suggestion and add qualified tools within a few days.",
+            },
+            {
+              question: "What categories do you cover?",
+              answer: "We cover 6 main categories: Code (AI coding assistants), Writing (content generation), Design (image and visual AI), Marketing (SEO and growth tools), Data (analytics and data processing), and Automation (workflow and productivity AI).",
+            },
+            {
+              question: "Do affiliate links affect your ratings?",
+              answer: "No. Our ratings are independent of affiliate relationships. We rate tools based on quality, not commission rates. Some highly-rated tools have no affiliate program at all.",
+            },
+          ]}
+        />
+      </section>
+
+      {/* Ecosystem Footer */}
+      <EcosystemFooter currentProduct="AIToolsRadar" />
     </>
   );
 }
